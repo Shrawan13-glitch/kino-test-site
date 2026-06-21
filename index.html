@@ -4,38 +4,40 @@
 <meta charset="UTF-8">
 <title>Kino – AI Assistant</title>
 <style>
-  body {font-family:Arial,Helvetica,sans-serif; max-width:800px; margin:2rem auto; line-height:1.6; color:#333;}
-  h1 {color:#2c3e50;}
-  .features table {width:100%; border-collapse:collapse;}
-  .features th, .features td {border:1px solid #ddd; padding:0.5rem;}
-  .features th {background:#f4f4f4;}
-  .demo button {margin-top:1rem; padding:0.6rem 1.2rem; font-size:1rem;}
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    max-width: 720px;
+    margin: 3rem auto;
+    padding: 0 1rem;
+    line-height: 1.6;
+    color: #222;
+    background: #fafafa;
+  }
+  h1 { color: #0d47a1; margin-bottom: 0.3rem; }
+  h2 { color: #1565c0; margin-top: 2rem; }
+  ul { list-style: none; padding: 0; }
+  li::before { content: "•"; color: #0d47a1; margin-right: 0.5rem; }
+  a { color: #1565c0; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+  footer { margin-top: 3rem; font-size: 0.9rem; color: #555; }
 </style>
 </head>
 <body>
 <h1>Kino – Your Friendly AI Assistant</h1>
-<p>Welcome! I’m <strong>Kino</strong>, a conversational AI that can search the web, generate PDFs, create speech, and automate GitHub.
-</p>
-<h2>Features</h2>
-<div class="features">
-<table>
-<thead><tr><th>Category</th><th>What I Can Do</th></tr></thead>
-<tbody>
-<tr><td>Information</td><td>Real‑time web search, summarisation, fact‑checking</td></tr>
-<tr><td>Content Creation</td><td>Generate PDFs, HTML, markdown, code snippets</td></tr>
-<tr><td>Audio</td><td>Text‑to‑speech with many voices</td></tr>
-<tr><td>Automation</td><td>GitHub repo/branch/PR/issue management</td></tr>
-<tr><td>File System</td><td>Temporary virtual storage for files</td></tr>
-<tr><td>Extensibility</td><td>Add custom tools via JSON configuration</td></tr>
-</tbody>
-</table>
-</div>
-<h2>Demo</h2>
-<div class="demo">
-<button onclick="alert('Ask me anything!')">Ask a Question</button>
-<button onclick="fetch('sample.pdf').then(r=>r.blob()).then(b=>{const u=URL.createObjectURL(b); const a=document.createElement('a'); a.href=u; a.download='sample.pdf'; a.click();});">Download Sample PDF</button>
-<button onclick="new Audio('sample.wav').play();">Play Sample Speech</button>
-</div>
-<footer><p>Hosted on GitHub Pages – <a href="https://github.com/Shrawan13-glitch/kino-test-site">View source</a></p></footer>
+<p>Welcome! I’m <strong>Kino</strong>, a conversational AI designed to help you with information, content creation, audio, and automation—all directly from a simple web interface.</p>
+<h2>What I Can Do</h2>
+<ul>
+  <li><strong>Information:</strong> Real‑time web search, summarisation, and fact‑checking.</li>
+  <li><strong>Content Creation:</strong> Generate PDFs, HTML, markdown, and code snippets.</li>
+  <li><strong>Audio:</strong> Text‑to‑speech with multiple natural voices.</li>
+  <li><strong>Automation:</strong> Manage GitHub repos, branches, pull requests, issues, and workflows.</li>
+  <li><strong>File System:</strong> Temporary virtual storage for files during a session.</li>
+  <li><strong>Extensibility:</strong> Add custom tools via JSON configuration.</li>
+</ul>
+<h2>Get Started</h2>
+<p>Interact with Kino through the chat interface provided by the platform, or explore the <a href="https://github.com/Shrawan13-glitch/kino" target="_blank">official repository</a> for integration examples and documentation.</p>
+<footer>
+  <p>Hosted on <a href="https://github.com/Shrawan13-glitch/kino-test-site" target="_blank">GitHub Pages</a></p>
+</footer>
 </body>
 </html>
